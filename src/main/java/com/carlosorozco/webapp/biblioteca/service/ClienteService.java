@@ -24,7 +24,7 @@ public class ClienteService implements IClienteService {
     }
  
     @Override
-    public Cliente buscarClientePordpi(Long dpi) {
+    public Cliente buscarClientePorDpi(Long dpi) {
         return clienteRepository.findById(dpi).orElse(null);
     }
  
