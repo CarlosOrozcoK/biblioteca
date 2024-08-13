@@ -1,6 +1,5 @@
 package com.carlosorozco.webapp.biblioteca.model;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,7 +12,6 @@ import lombok.Data;
 @Entity
 @Data
 @Table(name = "Libros")
-
 public class Libro {
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -27,9 +25,9 @@ public class Libro {
     private Boolean disponibilidad;
     private String numeroEstanteria;
     private String cluster;
-
     @ManyToOne     
     private Categoria categoria;
 
+    
     
 }
